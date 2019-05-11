@@ -1,24 +1,24 @@
 import React from 'react';
 import './SearchResults.css';
-import TrackList from "../TrackList/TrackList"
+import SearchTrack from "../Tracks/SearchTrack"
 
 
 
-class SearchResults extends React.Component {
-  render(){
+
+
+
+
+const SearchResults = props => {
 
   return (
-
-     <div className = "wrapper_search">
-     <div className="SearchContainer">
-    {!this.props.searchResults === false?
-     <TrackList  onAdd = {this.props.onAdd} btnAdd = {true}  tracks={this.props.searchResults}  />:
+     <div className="search_Wrapper">
+      {props.searchResults?props.searchResults.map(track => 
+       <SearchTrack  uri = {track.uri} key ={track.id} tracks={props.searchResults}
+       name={track.name} album = {track.album} artist={track.artist} id={track.id}
+       img ={track.img} onAdd = {props.onAdd}    />):
      <div className={"no_results-message"}>Nothing has been found with your Search request</div>}
      </div>
-    </div>
-
-  );
-}
+     )
 }
 
 

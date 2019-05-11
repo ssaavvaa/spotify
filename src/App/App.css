@@ -2,65 +2,254 @@ body,
 html,
 #root {
   height: 100%;
+  background: #F8F8F8;
 }
 
 html {
   font-size: 18px;
+
 }
+
+*{
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
 
 h1 {
   padding: .77rem 0;
-  background-color:rgba(3, 8, 39, 0.973);
+  padding:15px 10px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   font-size: 1.88rem;
+  font-weight: 700;
   color: #fff;
   box-shadow: 0px 0px 2px 2px white;
 }
 
 h1 .highlight {
-  color: #6c41ec;
-}
-
-
-
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.55rem;
+  color: #1DB954;
 }
 
 .App {
-
-  background-image: url('./Spotify.png');
-  background-size: cover;
-  height: auto;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  color: #fff;
   padding-bottom: 50px;
 }
 
 
-.height{
-  height:auto;
-}
-
 .App-playlist {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin:0 auto;
   max-width: 1200px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  min-width: 200px;
+
+
 }
+
+
+#mainCounter{
+  padding:13px 4px;
+  font-size: 24px;
+  position: fixed;
+  font-weight: 700;
+  z-index:1000;
+  bottom:20px;
+  background: white;
+  left:20px;
+  width:40px;
+  color:rgba(0, 0, 0, 0.726);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.562);
+  text-align: center;
+ display: none;
+ border-radius: 5px;
+ border-bottom-right-radius: 10px 6px;
+ border-top-left-radius: 10px 6px;
+}
+
+#loading-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+z-index:999999;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#loading-text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color:black;
+  width: 100px;
+  height: 30px;
+  margin: -7px 0 0 -45px;
+  text-align: center;
+z-index:1000;
+font-weight: 900;
+  font-size: 20px;
+}
+
+#loading-content {
+  display: block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.863);
+  left: 50%;
+  top: 50%;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+  border: 3px solid #F00;
+}
+
+#loading-content:after {
+  content: "";
+  position: absolute;
+  border: 3px solid #0F0;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+}
+
+#loading-content:before {
+  content: "";
+  position: absolute;
+  border: 3px solid #00F;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+}
+
+#loading-content {
+  border: 3px solid transparent;
+  border-top-color: #4D658D;
+  border-bottom-color: #4D658D;
+  border-radius: 50%;
+  -webkit-animation: loader 2s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 2s linear infinite;
+}
+
+#loading-content:before {
+  border: 3px solid transparent;
+  border-top-color: #D4CC6A;
+  border-bottom-color: #D4CC6A;
+  border-radius: 50%;
+  -webkit-animation: loader 3s linear infinite;
+    -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 3s linear infinite;
+}
+
+#loading-content:after {
+  border: 3px solid transparent;
+  border-top-color: #84417C;
+  border-bottom-color: #84417C;
+  border-radius: 50%;
+  -webkit-animation: loader 1.5s linear infinite;
+  animation: loader 1.5s linear infinite;
+    -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+}
+
+@-webkit-keyframes loaders {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.swal-text {
+  background-color: #FEFAE3;
+  padding: 17px;
+  border: 1px solid #F0E1A1;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #61534e;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid rgb(199, 179, 161);
+
+
+}
+
+
+
+.swal-button {
+color:white;
+border:1px solid white;
+box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.151);
+background-color: #1DB954;
+
+}
+.swal-button--cancel{
+  background-color: rgb(164, 214, 151);
+  border:none!important;
+  outline:none!important;
+}
+
+.swal-button--cancel:hover {
+  background-color: rgba(166, 171, 187, 0.918)!important;
+  outline:none!important;
+ }
+
+ .swal-button--confirm:hover {
+  background-color: rgb(17, 148, 63)!important;
+ }
+
 
 @media only screen and (max-width: 1020px) {
   .App-playlist {
     align-items: center;
     flex-direction: column;
   }
-}
+  html {
+    font-size: 16px;
+  }
 
+  .swal-title {
+    font-size: 1.375rem;
+  }
+
+  .swal-text {
+font-size: 1rem;
+  }
+  .swal-modal{
+  width:80%;
+  }
+
+  .App {
+    padding-bottom: 50px;
+  }
+}
 
 

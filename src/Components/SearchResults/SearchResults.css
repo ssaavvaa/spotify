@@ -1,35 +1,20 @@
-
-
-
-.SearchContainer{
-  background: rgba(3, 8, 39, 0.836);
-  margin:0 auto;
-  min-height: 100vh;
-  
-  overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-.resultHeading{
-  background: rgba(0, 0, 0, 0.466);
-  width:100%;
-  padding:10px;
-  text-align: center;
-  margin-bottom: 20px;
+.search_Wrapper{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+flex-direction: row;
 }
 
   .no_results-message{
     margin-top: 2px;
-    color:white;
+    color:#1DB954;
     font-weight: 500;
     margin-top: 10vh;
-    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 0px 0px .3px rgb(34, 35, 38);
     line-height: 1.2;
-    font-size: 24px;
-    font-style: italic;
+    font-size: 1.6rem;
   }
+
+
 

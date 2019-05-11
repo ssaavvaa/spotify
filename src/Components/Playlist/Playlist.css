@@ -1,62 +1,64 @@
-.Playlist {
-    display: flex;
-    display:none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-y: scroll;
-    width: 37%;
-    max-height: 950px;
-    padding: 2.27rem 1.16rem;
-    background-color: rgba(1, 12, 63, 0.7);
-    box-shadow: 0 4px 2px 2px #000000;
-  }
+
 
   .Playlist input {
     width: 100%;
     border: 0;
     outline: 0;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.808);
     background: transparent;
     border-bottom: 1px solid #6f6f6f;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.55rem;
-    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 800;
   }
   
   .Playlist-save {
     cursor: pointer;
-    width: 10rem;
-    padding: .77rem 0;
-    border-radius: 54px;
+    width:10rem;
+    border-radius: 30px;
     border-width: 0px;
-    margin-top: 1.27rem;
-    background-color: #6c41ec;
-    text-align: center;
+   padding:10px 10px;
+   margin:8px;
     font-size: .83rem;
     transition: background-color .25s;
-    color: #fff;
-    font-weight: 500;
+    font-weight: 700;
+    outline: none;
+  }
+
+  .Playlist-save:first-child{
+    margin-top: 20px;
+  }
+
+
+  .playlist_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
   .Playlist-save:hover {
-    background-color: rgba(108, 65, 233, .7);
+    background-color: rgb(22, 170, 74)!important;
+    transform:scale(1.1);
+    transition: all .1s ease-in-out;
+  }
+
+  .saved{
+    display:none;
+    padding:20px;
+    margin:0 auto;
+    color:rgb(21, 146, 65);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
   }
   
   ::-webkit-scrollbar {
       width: 0px;
       background: transparent;
   }
-  
-  @media only screen and (max-width: 1020px) {
-    .Playlist {
-      width: 90%;
-    }
-  }
+#playListName{
+  border-radius: 0px;
+}
 
-  .wrapper_search{
-    width:100%;
-    text-align: center;
-  
-
-    box-shadow: 0px 0px 5px 2px black;
-  }
