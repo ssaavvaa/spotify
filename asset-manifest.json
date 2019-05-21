@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/jamming/static/css/main.2046bb5e.chunk.css",
-    "main.js": "/jamming/static/js/main.790b7035.chunk.js",
-    "main.js.map": "/jamming/static/js/main.790b7035.chunk.js.map",
+    "main.js": "/jamming/static/js/main.7e4498e6.chunk.js",
+    "main.js.map": "/jamming/static/js/main.7e4498e6.chunk.js.map",
     "runtime~main.js": "/jamming/static/js/runtime~main.6e9a7a58.js",
     "runtime~main.js.map": "/jamming/static/js/runtime~main.6e9a7a58.js.map",
-    "static/js/2.65de5ddf.chunk.js": "/jamming/static/js/2.65de5ddf.chunk.js",
-    "static/js/2.65de5ddf.chunk.js.map": "/jamming/static/js/2.65de5ddf.chunk.js.map",
+    "static/js/2.dffe079f.chunk.js": "/jamming/static/js/2.dffe079f.chunk.js",
+    "static/js/2.dffe079f.chunk.js.map": "/jamming/static/js/2.dffe079f.chunk.js.map",
     "index.html": "/jamming/index.html",
-    "precache-manifest.5cd4cedd4ee2dc93d2861de568b7cab4.js": "/jamming/precache-manifest.5cd4cedd4ee2dc93d2861de568b7cab4.js",
+    "precache-manifest.2703e4d62c10d7f74e306385b925a7fc.js": "/jamming/precache-manifest.2703e4d62c10d7f74e306385b925a7fc.js",
     "service-worker.js": "/jamming/service-worker.js",
     "static/css/main.2046bb5e.chunk.css.map": "/jamming/static/css/main.2046bb5e.chunk.css.map"
   }
