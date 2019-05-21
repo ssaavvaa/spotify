@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/jamming/static/css/main.b69eb867.chunk.css",
-    "main.js": "/jamming/static/js/main.78e68bba.chunk.js",
-    "main.js.map": "/jamming/static/js/main.78e68bba.chunk.js.map",
+    "main.css": "/jamming/static/css/main.2046bb5e.chunk.css",
+    "main.js": "/jamming/static/js/main.235f143f.chunk.js",
+    "main.js.map": "/jamming/static/js/main.235f143f.chunk.js.map",
     "runtime~main.js": "/jamming/static/js/runtime~main.6e9a7a58.js",
     "runtime~main.js.map": "/jamming/static/js/runtime~main.6e9a7a58.js.map",
-    "static/js/2.d9e2c9fc.chunk.js": "/jamming/static/js/2.d9e2c9fc.chunk.js",
-    "static/js/2.d9e2c9fc.chunk.js.map": "/jamming/static/js/2.d9e2c9fc.chunk.js.map",
+    "static/js/2.65de5ddf.chunk.js": "/jamming/static/js/2.65de5ddf.chunk.js",
+    "static/js/2.65de5ddf.chunk.js.map": "/jamming/static/js/2.65de5ddf.chunk.js.map",
     "index.html": "/jamming/index.html",
-    "precache-manifest.a436933f9a4d07b226883d85ec74ec08.js": "/jamming/precache-manifest.a436933f9a4d07b226883d85ec74ec08.js",
+    "precache-manifest.3128b32f9bfbaf53635d2c481a022c41.js": "/jamming/precache-manifest.3128b32f9bfbaf53635d2c481a022c41.js",
     "service-worker.js": "/jamming/service-worker.js",
-    "static/css/main.b69eb867.chunk.css.map": "/jamming/static/css/main.b69eb867.chunk.css.map",
-    "static/media/App.css": "/jamming/static/media/Spotify.6f3f1d01.png"
+    "static/css/main.2046bb5e.chunk.css.map": "/jamming/static/css/main.2046bb5e.chunk.css.map"
   }
 }
