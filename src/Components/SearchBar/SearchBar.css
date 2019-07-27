@@ -1,34 +1,29 @@
-.SearchBar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.54rem;
-  margin-bottom: 1.54rem;
 
-}
-
-.input_search{
+.search_wrapper{
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+  
 
 }
 
-.input_search input{
+.search_wrapper input{
   font-size:1.25rem;
   outline:none;
+  width:500px;
+ 
   border:1px solid black;
   transition: all .3s ease-in-out;
    padding:10px;
-  width: 400px;
 }
 
-.input_search input:focus{
+.search_wrapper input:focus{
   border-top-left-radius: 10px 20px; 
 }
 
-.input_search input::placeholder{
-  text-align: center;
+.search_wrapper input::placeholder{
+ text-align: center;
   font-size: 0.8rem;
   color:rgba(0, 0, 0, 0.342);
   letter-spacing: 0.6px;
@@ -36,18 +31,17 @@
 .option_buttons{
   display: flex;
   flex-direction: row;
- 
   justify-content: center;
   flex-wrap: wrap;
 
 }
 
-.input_search span{
+.search_wrapper span{
   background-color: #1DB954;
   color:white;
   box-shadow: 0px 0px 2px 1px #222326af;
   position: relative;
-  right:5px;
+  
   border-bottom-right-radius: 10px 20px;
   padding:0px 20px;
   display: flex;
@@ -74,6 +68,7 @@ transition: all .1s ease-in-out;
     font-weight: 600;
     border:1px solid rgba(255, 255, 255, 0.521);
     outline: none;
+    box-shadow: 0px 0px 2px 1px #1DB954;
     
   }
 
@@ -90,8 +85,9 @@ transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
   }
 
-  .tracks_Counter{
+  #searchBar_counter{
     position: absolute;
+    z-index:100;
     top:-10px;
     right:-10px;
     color:black;
@@ -117,22 +113,24 @@ transition: all .1s ease-in-out;
     margin-top: 1.24rem;
     margin-bottom: 1.24rem;
   }
-  .input_search input{
-    width:300px;
-  }
+ 
+.search_wrapper input{
+  width:400px;
+}
   .input_search {
     margin-bottom: 1rem;
   }
-
+ 
 }
 
 @media only screen and (max-width: 700px) {
-  .input_search input{
-    width:240px;
-  }
+
   .option_button{
     padding:8px 20px;
     font-size: 1rem;
+  }
+  .search_wrapper input{
+    width:250px;
   }
 
 }

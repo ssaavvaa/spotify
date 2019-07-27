@@ -1,48 +1,42 @@
-import React from 'react';
-import './Track.css';
-import {styles} from "../../Fonts_styles/font_styles"
-import $ from 'jquery'; 
+import  React                      from 'react';
+import  './Track.css';
+import  {styles}                   from "../../Fonts_styles/font_styles"
+import  {connect}                  from 'react-redux'
+import  {TimelineLite,}            from 'gsap/all';
+import  addTrackToPlayList         from "../../Reducers/Actions/addTrackToPlaylist"
+
+const animateAdd = new TimelineLite()
 
 
-let switchToListen = event => {
-  $(event.currentTarget).siblings(".frameTrack").slideToggle()
+const  SearchTrack = props => {
+  let trackCover = React.createRef();
+  function onAddTrack(id){
+      animateAdd.to(trackCover, .3, {scale:1.02})
+                .to(trackCover,.3,{scale:0,rotation: 100})
+      animateAdd.eventCallback("onComplete",() => {
+                  props.addTrackToPlayList(id) 
+  })
 }
-
-
-const SearchTrack = props => {
-
-  let extractUri = props.uri.match(/track:([^&]*)/)[1]
   return (
-  <div className="Track">
-      <div className="frameTrack">
-         <iframe title="listenTrack" src={`https://open.spotify.com/embed/track/${extractUri}`}   frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-     </div>
-
-    <div className="Track_info-cover">
-
-             <h3 style ={{
-                     fontFamily:styles.fonts.main}}>
-                     {props.name}
-             </h3>
-             <p style ={{color:styles.colors.font_main,
-                     fontFamily:styles.fonts.main}}>
-                     {props.artist} | {props.album}
-             </p>
-    
+    <div ref={div => trackCover = div} className="searchTrack-wrapper" >
+         <img  src ="./add.jpg" alt="AddTrack" className="action-addTrack" onClick = {onAddTrack.bind(this,props.id)} />
+         <img  className = "searchTrack-image" src = {props.img} alt={props.name} />
+         <div className="searchTrack_info-cover" style={{backgroundColor:styles.colors.bg_main,zIndex:2}}>
+             <h3 style ={styles.track_name}>{props.name}</h3>
+             <p style ={styles.track_description}>{props.artist} | {props.album} </p>
+         </div>
     </div>
-          <img  className = "track_image" src = {props.img} alt={props.id} />
-          <img src ="./add.svg" alt="addButton" className="button_AddTrack" onClick = {props.onAdd.bind(this,props.id)} />
-          <img src ="./ddd.png" alt = "playButton" className="button_Listen" onClick = {switchToListen} />
-          <div className = "success">
-             <img className="success_image" alt={props.img} src = "./img_319605.png"/>
-          </div>
 
- </div>
- 
   );
-  
+}
 
+function mapDispatchToProps(dispatch){
+  return{
+    addTrackToPlayList:(id)=>{
+        dispatch(addTrackToPlayList(id))
+    }
+  }
 }
 
 
-  export  default SearchTrack ;
+export default connect(null,mapDispatchToProps)(SearchTrack);

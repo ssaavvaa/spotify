@@ -1,7 +1,7 @@
 body,
 html,
 #root {
-  height: 100%;
+ 
   background: #F8F8F8;
 }
 
@@ -10,20 +10,23 @@ html {
 
 }
 
-*{
+* {
   box-sizing: border-box;
   letter-spacing: 2px;
 }
 
 
 h1 {
-  padding: .77rem 0;
-  padding:15px 10px;
+
+  padding: 15px 10px;
   text-align: center;
   font-size: 1.88rem;
   font-weight: 700;
   color: #fff;
-  box-shadow: 0px 0px 2px 2px white;
+
+  box-shadow: 0px 0px 2px 2px rgb(20, 1, 1);
+  margin-bottom: 30px;
+  border-bottom: 1px solid blue;
 }
 
 h1 .highlight {
@@ -32,45 +35,31 @@ h1 .highlight {
 
 .App {
   padding-bottom: 50px;
+ min-width: 300px;
 }
 
 
-.App-playlist {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin:0 auto;
-  max-width: 1200px;
-  min-width: 200px;
-
-
-}
-
-
-#mainCounter{
-  padding:13px 4px;
-  font-size: 24px;
+#bottomPageFixedTracksCounter {
+  font-size: 30px;
   position: fixed;
   font-weight: 700;
-  z-index:1000;
-  bottom:20px;
+  z-index: 1000;
+  bottom: 18px;
   background: white;
-  left:20px;
-  width:40px;
-  color:rgba(0, 0, 0, 0.726);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.562);
+  border: 4px solid black;
+  left: 18px;
+  padding: 8px 13px;
+  color: rgba(0, 0, 0, 0.726);
+  display: none;
   text-align: center;
- display: none;
- border-radius: 5px;
- border-bottom-right-radius: 10px 6px;
- border-top-left-radius: 10px 6px;
+  border-radius: 100%;
 }
 
-#loading-wrapper {
+#loading_animation {
   position: fixed;
   width: 100%;
   height: 100%;
-z-index:999999;
+  z-index: 999999;
   left: 0;
   top: 0;
   display: none;
@@ -81,13 +70,13 @@ z-index:999999;
   position: absolute;
   top: 50%;
   left: 50%;
-  color:black;
+  color: black;
   width: 100px;
   height: 30px;
   margin: -7px 0 0 -45px;
   text-align: center;
-z-index:1000;
-font-weight: 900;
+  z-index: 1000;
+  font-weight: 900;
   font-size: 20px;
 }
 
@@ -140,7 +129,7 @@ font-weight: 900;
   border-bottom-color: #D4CC6A;
   border-radius: 50%;
   -webkit-animation: loader 3s linear infinite;
-    -moz-animation: loader 2s linear infinite;
+  -moz-animation: loader 2s linear infinite;
   -o-animation: loader 2s linear infinite;
   animation: loader 3s linear infinite;
 }
@@ -152,7 +141,7 @@ font-weight: 900;
   border-radius: 50%;
   -webkit-animation: loader 1.5s linear infinite;
   animation: loader 1.5s linear infinite;
-    -moz-animation: loader 2s linear infinite;
+  -moz-animation: loader 2s linear infinite;
   -o-animation: loader 2s linear infinite;
 }
 
@@ -162,6 +151,7 @@ font-weight: 900;
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -175,6 +165,7 @@ font-weight: 900;
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -182,6 +173,14 @@ font-weight: 900;
   }
 }
 
+
+.hidden {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
 
 
 .swal-text {
@@ -205,26 +204,31 @@ font-weight: 900;
 
 
 .swal-button {
-color:white;
-border:1px solid white;
-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.151);
-background-color: #1DB954;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.151);
+  background-color: #1DB954;
 
 }
-.swal-button--cancel{
+
+
+
+.swal-button--cancel {
   background-color: rgb(164, 214, 151);
-  border:none!important;
-  outline:none!important;
+  border: none !important;
+  outline: none !important;
 }
 
 .swal-button--cancel:hover {
-  background-color: rgba(166, 171, 187, 0.918)!important;
-  outline:none!important;
- }
+  background-color: rgba(166, 171, 187, 0.918) !important;
+  outline: none !important;
+}
 
- .swal-button--confirm:hover {
-  background-color: rgb(17, 148, 63)!important;
- }
+.swal-button--confirm:hover {
+  background-color: rgb(17, 148, 63) !important;
+}
+
+
 
 
 @media only screen and (max-width: 1020px) {
@@ -232,6 +236,7 @@ background-color: #1DB954;
     align-items: center;
     flex-direction: column;
   }
+
   html {
     font-size: 16px;
   }
@@ -241,15 +246,24 @@ background-color: #1DB954;
   }
 
   .swal-text {
-font-size: 1rem;
+    font-size: 1rem;
   }
-  .swal-modal{
-  width:80%;
+
+  .swal-modal {
+    width: 80%;
   }
 
   .App {
     padding-bottom: 50px;
   }
+
+  .recommendations_heading {
+
+    font-size: 1.3rem;
+
+  }
+  h1 {
+
+    margin-bottom: 20px;
+  }
 }
-
-

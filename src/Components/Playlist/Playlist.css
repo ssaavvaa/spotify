@@ -1,6 +1,13 @@
+.playlist_Wrapper{
 
+  max-width:600px;
+  display: flex;
+  margin:0 auto;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .Playlist input {
+  .playlist_input {
     width: 100%;
     border: 0;
     outline: 0;
@@ -11,8 +18,8 @@
     font-size: 1.75rem;
     font-weight: 800;
   }
-  
-  .Playlist-save {
+
+  .Playlist-save, .Playlist-Delete {
     cursor: pointer;
     width:10rem;
     border-radius: 30px;
@@ -23,10 +30,6 @@
     transition: background-color .25s;
     font-weight: 700;
     outline: none;
-  }
-
-  .Playlist-save:first-child{
-    margin-top: 20px;
   }
 
 
@@ -44,6 +47,18 @@
     transition: all .1s ease-in-out;
   }
 
+  .Playlist-Delete:hover {
+    background-color: rgb(22, 170, 74)!important;
+    transform:scale(1.1);
+    transition: all .1s ease-in-out;
+  }
+
+
+
+
+
+
+
   .saved{
     display:none;
     padding:20px;
@@ -60,5 +75,13 @@
   }
 #playListName{
   border-radius: 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .Playlist{
+  
+    width:100%;
+  }
 }
 

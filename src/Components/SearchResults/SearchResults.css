@@ -1,20 +1,16 @@
-.search_Wrapper{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-flex-direction: row;
+.searchResults-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-  .no_results-message{
-    margin-top: 2px;
-    color:#1DB954;
-    font-weight: 500;
-    margin-top: 10vh;
-    text-align: center;
-    text-shadow: 0px 0px .3px rgb(34, 35, 38);
-    line-height: 1.2;
-    font-size: 1.6rem;
-  }
-
-
-
+.no_results-message {
+  margin-top: 2px;
+  color: rgb(1, 8, 3);
+  font-weight: 500;
+  margin-top: 10vh;
+  text-align: center;
+  text-shadow: 0px 0px .3px rgb(34, 35, 38);
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
