@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/spotify-search-save_REACT-GSAP/static/css/main.7000cd91.chunk.css",
-    "main.js": "/spotify-search-save_REACT-GSAP/static/js/main.d2b0e0d9.chunk.js",
-    "main.js.map": "/spotify-search-save_REACT-GSAP/static/js/main.d2b0e0d9.chunk.js.map",
+    "main.js": "/spotify-search-save_REACT-GSAP/static/js/main.e96d6fe6.chunk.js",
+    "main.js.map": "/spotify-search-save_REACT-GSAP/static/js/main.e96d6fe6.chunk.js.map",
     "runtime~main.js": "/spotify-search-save_REACT-GSAP/static/js/runtime~main.703af6b3.js",
     "runtime~main.js.map": "/spotify-search-save_REACT-GSAP/static/js/runtime~main.703af6b3.js.map",
     "static/js/2.65de5ddf.chunk.js": "/spotify-search-save_REACT-GSAP/static/js/2.65de5ddf.chunk.js",
     "static/js/2.65de5ddf.chunk.js.map": "/spotify-search-save_REACT-GSAP/static/js/2.65de5ddf.chunk.js.map",
     "index.html": "/spotify-search-save_REACT-GSAP/index.html",
-    "precache-manifest.04ee72d781ef049cb70c0732c2aa1c7c.js": "/spotify-search-save_REACT-GSAP/precache-manifest.04ee72d781ef049cb70c0732c2aa1c7c.js",
+    "precache-manifest.fc43f55ed42044cd0580678bcbf03e4e.js": "/spotify-search-save_REACT-GSAP/precache-manifest.fc43f55ed42044cd0580678bcbf03e4e.js",
     "service-worker.js": "/spotify-search-save_REACT-GSAP/service-worker.js",
     "static/css/main.7000cd91.chunk.css.map": "/spotify-search-save_REACT-GSAP/static/css/main.7000cd91.chunk.css.map"
   }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b4a1e81bdfc5d67d66add5c901fc8f79",
+    "revision": "45c4a3186b39b2ceb202057c37afda8f",
     "url": "/spotify-search-save_REACT-GSAP/index.html"
   },
   {
-    "revision": "086a655b349f6d676fe0",
+    "revision": "ba4ad3dae2c3d75138cf",
     "url": "/spotify-search-save_REACT-GSAP/static/css/main.7000cd91.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spotify-search-save_REACT-GSAP/static/js/2.65de5ddf.chunk.js"
   },
   {
-    "revision": "086a655b349f6d676fe0",
-    "url": "/spotify-search-save_REACT-GSAP/static/js/main.d2b0e0d9.chunk.js"
+    "revision": "ba4ad3dae2c3d75138cf",
+    "url": "/spotify-search-save_REACT-GSAP/static/js/main.e96d6fe6.chunk.js"
   },
   {
     "revision": "bdb2559b61047d0ffb75",
