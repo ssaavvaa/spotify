@@ -10,7 +10,7 @@ let accessToken;
 const Spotify = {
   getAccessToken() {
     if (accessToken) {
-      return accessToken;git
+      return accessToken;
     } else if (accessTokenMatch && expiresInMatch) {
       accessToken = accessTokenMatch[1];
       window.history.pushState('Access Token', null, '/');
