@@ -1,31 +1,47 @@
 
 .search_wrapper{
+
+
+  margin-bottom: 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  align-items: center;
   justify-content: center;
-  
+ 
 
 }
 
 .search_wrapper input{
   font-size:1.25rem;
   outline:none;
-  width:500px;
- 
-  border:1px solid black;
+  max-width:600px;
+  box-sizing: border-box;
+outline: none;
+border:.3px solid rgba(0, 0, 0, 0.363);
   transition: all .3s ease-in-out;
-   padding:10px;
+   padding:10px 20px;
+
+}
+.search_wrapper span{
+  background-color: #1DB954;
+  color:white;
+  font-size:1.25rem;
+  box-sizing: border-box;
+  display: inline-block!;
+  padding:13px 20px;
+  border-bottom-right-radius: 3px 10px;
+ 
+
+   cursor: pointer;
 }
 
-.search_wrapper input:focus{
-  border-top-left-radius: 10px 20px; 
-}
 
 .search_wrapper input::placeholder{
  text-align: center;
-  font-size: 0.8rem;
-  color:rgba(0, 0, 0, 0.342);
+
+  font-size: 0.9rem;
+  color:rgba(0, 0, 0, 0.2);
   letter-spacing: 0.6px;
 }
 .option_buttons{
@@ -36,24 +52,12 @@
 
 }
 
-.search_wrapper span{
-  background-color: #1DB954;
-  color:white;
-  box-shadow: 0px 0px 2px 1px #222326af;
-  position: relative;
-  
-  border-bottom-right-radius: 10px 20px;
-  padding:0px 20px;
-  display: flex;
-  align-items: center;
-   justify-content: center;
-   cursor: pointer;
-}
+
 
 
 
 .search_icon:hover{
-transform: scale(1.1);
+
 background-color: rgb(22, 155, 69);
 transition: all .1s ease-in-out;
 }
@@ -65,22 +69,17 @@ transition: all .1s ease-in-out;
     margin:0px 10px;
     padding:10px 45px;
     cursor: pointer;
-    font-weight: 600;
-    border:1px solid rgba(255, 255, 255, 0.521);
+    background:rgb(16, 63, 63) !important;
+   border:none!important;
     outline: none;
-    box-shadow: 0px 0px 2px 1px #1DB954;
+    border-radius: 3px;
     
   }
 
-.option_button:first-child{
-  border-bottom-left-radius: 6px 60px;
-}
-.option_button:last-child{
-  border-bottom-right-radius: 6px 60px;
-}
+
 
   .option_button:hover{
-    background: rgb(53, 54, 58)!important;
+    
     transform:scale(1.1);
     transition: all .1s ease-in-out;
   }
@@ -95,11 +94,10 @@ transition: all .1s ease-in-out;
     background: rgb(231, 238, 234);
     font-family: none;
     font-size: 1.2rem;
-    border-radius: 10px;
-    border-bottom-right-radius: 3px 10px;
-    border-top-left-radius: 3px 10px;
+    border-radius: 2px;
+   
     text-align: center;
-    box-shadow: 0px 0px 2px 1px rgb(34, 35, 38);
+    box-shadow: 0px 0px 2px 1px rgba(34, 35, 38 , 0.3);
   }
 
 

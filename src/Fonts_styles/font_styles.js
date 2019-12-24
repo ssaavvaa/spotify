@@ -31,7 +31,7 @@ export const styles = {
 
     get main_heading() {
         return {
-            backgroundColor: this.colors.bg_main,
+          
             fontFamily: this.fonts.main
         }
     },

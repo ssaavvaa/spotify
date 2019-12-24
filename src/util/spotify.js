@@ -1,6 +1,6 @@
 import swal from 'sweetalert';
 const clientId = 'b2c5900815984920b0af23be399fbd54'; // Insert client ID here.
-const redirectUri = 'https://ssaavvaa_spotify.surge.sh/'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
+const redirectUri = 'https://spotify-music-search.netlify.com'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
 const expiresInMatch = window.location.href.match(/expires_in=([^&]*)/);
 
